@@ -15,6 +15,6 @@ jobs:
       - uses: int128/kaniko-action@v1.7.0
         with:
           tags: ghcr.io/guenoledc/blockchain-ops-kata/application:latest
-          context: .
+          context: app
           file: app/Dockerfile
           push: true
