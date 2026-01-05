@@ -1,0 +1,20 @@
+name: build the image
+on:
+  push:
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: int128/kaniko-action@v1.7.0
+        with:
+          tags: ghcr.io/guenoledc/blockchain-ops-kata:latest
+          context: .
+          file: app/Dockerfile
+          push: true
