@@ -1,5 +1,6 @@
 image:
   tag: main
+  repository: ghcr.io/charafzellou/blockchain-ops-kata/application
 
 env:
   # Node URL for blockchain connection
