@@ -6,3 +6,5 @@ env:
   NODE_URL: "wss://cacib-saturn-test.francecentral.cloudapp.azure.com:9443/"
   # Starting block number
   START_BLOCK: "23415989"
+  # User address for blockchain operations
+  USER_ADDRESS: "0x7927d2e42de0D62B83A9054e0a109Dcae52C18b2"

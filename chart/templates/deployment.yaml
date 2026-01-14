@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "blockchain-ops.fullname" . }}
-  namespace: ns-interview
   labels:
     {{- include "blockchain-ops.labels" . | nindent 4 }}
 spec:
