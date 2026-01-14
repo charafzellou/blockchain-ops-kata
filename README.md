@@ -20,4 +20,3 @@ Local installation of
 4. fix and build the docker image
 5. fix and execute the helm chart into the cluster
 6. verify that the application is running correctly by port-forwarding locally `curl http://localhost:8080/`
-
