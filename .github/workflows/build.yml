@@ -32,6 +32,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: app
+          file: app/Dockerfile
           platforms: linux/arm64
-          push: true
           tags: ghcr.io/charafzellou/blockchain-ops-kata/application:arm
+          push: true
